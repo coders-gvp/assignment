@@ -1,5 +1,5 @@
-#include<stdio.h>
- 
+//to print upper and lower triangular matrix//
+#include<stdio.h> 
 int main()
 {
  	int m,n,i,j,a[10][10],b[10][10],c[10][10];
