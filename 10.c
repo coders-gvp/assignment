@@ -1,3 +1,4 @@
+//display a string using pointers//
 #include<stdio.h>
 void main()
 {
