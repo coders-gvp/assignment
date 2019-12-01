@@ -2,7 +2,7 @@
 #include <stdio.h>
 int main() 
 {
-   char string[1000], sub[1000];
+   char string[20],sub[20];
    int position, length, c = 0;
    printf("Input a string\n");
    gets(string);
