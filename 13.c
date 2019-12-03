@@ -7,12 +7,7 @@ int main()
 	printf("Enter the year : ");
 	scanf("%d", &yer);
 	printf("\nRoman equivalent of %d is : ", yer);
-	rom(yer);
-	return 0;
-}
-void rom(int yer)
-{
-	int v, x, l, c, d, m;
+    int v, x, l, c, d, m;
 	m = yer/1000;
 	print(m,'m');
 	yer%=1000;
@@ -32,6 +27,7 @@ void rom(int yer)
 	print(v,'v');
 	yer%=5;
 	print(yer,'i');
+	return 0;
 }
 void print(int a, char c)
 {

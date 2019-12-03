@@ -1,7 +1,7 @@
+//a string with multiple sub strings//
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
- 
 void main()
 {
 	char a[10];
@@ -10,8 +10,6 @@ void main()
 	int p=0,r=0,i=0;
 	int t=0;
 	int x,g,s,n,o;
-	clrscr();
- 
 	puts("Enter First String:");
 	gets(a);
 	puts("Enter Second String:");
@@ -21,7 +19,6 @@ void main()
 	r = strlen(a);
 	n = strlen(b);
 	i=0;
- 
  // Copying the input string into another array
 	while(i <= r)
 	{
@@ -30,7 +27,6 @@ void main()
 	}	
 	s = n+r;
 	o = p+n;
- 
  // Adding the sub-string
 	for(i=p;i<s;i++)
 	{
@@ -43,7 +39,5 @@ void main()
 		a[o]=x;
 		o=o+1;
 	}
- 
 	printf("%s", a);
-	getch();
 }
