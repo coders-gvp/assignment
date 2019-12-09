@@ -1,5 +1,4 @@
 #include<stdio.h>
-void rom(int);
 void print(int, char);
 int main()
 {
