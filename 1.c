@@ -13,7 +13,7 @@ int main()
     {
         sum=sum+a[i];
     }
-    printf("%d",sum);
+    printf("the sum is %d\n",sum);
     avg=(float)sum/n;
     printf("the average of %d numbers is %.2f",n,avg);
 }

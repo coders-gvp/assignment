@@ -2,7 +2,7 @@
 #include <stdio.h>
 int main()
 {
-  int a[20],n,i,j,position,swap;
+  int a[20],n,i,j,p,swap;
   printf("Enter number of elements\n");
   scanf("%d",&n);
   printf("Enter %d integers\n",n);
@@ -12,17 +12,17 @@ int main()
   } 
   for(i=0;i<(n-1);i++)
   {
-    position=i;
-    for (j=i + 1;j<n;j++)
+    p=i;
+    for (j=i+1;j<n;j++)
     {
-      if (a[position]>a[j])
-        position=j;
+      if (a[p]>a[j])
+        p=j;
     }
-    if (position!=i)
+    if (p!=i)
     {
       swap=a[i];
-      a[i]=a[position];
-      a[position]=swap;
+      a[i]=a[p];
+      a[p]=swap;
     }
   }
   printf("Sorted list in ascending order:");

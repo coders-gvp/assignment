@@ -1,21 +1,18 @@
+//decimal to binary//
 #include <stdio.h>
-#include <conio.h>
-long decimalToBinary(long n);
+int decimalToBinary(int n);
 int main()
 {
-    long decimal;
+    int decimal;
     printf("Enter a decimal number\n");
-    scanf("%ld", &decimal);
-    printf("Binary number of %ld is %ld", decimal, decimalToBinary(decimal));
-     
- getch();
+    scanf("%d", &decimal);
+    printf("Binary number of %d is %ld", decimal, decimalToBinary(decimal));
     return 0;
 }
-long decimalToBinary(long n) 
+int decimalToBinary(int n) 
 {
-      int remainder; 
- long binary = 0, i = 1;
-    while(n != 0) 
+    int remainder,binary = 0, i = 1;
+    while(n!= 0) 
     {
         remainder = n%2;
         n = n/2;

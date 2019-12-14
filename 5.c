@@ -14,25 +14,23 @@ int main()
             scanf("%d",&mat[i][j]);
         }
     }
-    printf("The matrix is\n");
-    for(i=0;i<m;i++)
+    if(m==n)
     {
-        for(j=0;j<n;j++)
+        for(i=0;i<m;i++)
         {
-            printf(" %d",mat[i][j]);
-        }
-        printf("\n");
-    }
-    for(i=0;i<m;i++)
-    {
-        for(j=0;j<n;j++)
-        {
-            if(i==j)
+            for(j=0;j<n;j++)
             {
-                sum=sum+mat[i][j];
+                if(i==j)
+                {           
+                    sum=sum+mat[i][j];
+                }
             }
         }
+        printf("The sum of diagonal elements of a square matrix = %d\n",sum);
     }
-    printf("The sum of diagonal elements of a square matrix = %d\n",sum);
+    else
+    {
+        printf("sum of digonal elements not possoble");
+    }
 }
 
